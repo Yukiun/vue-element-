@@ -45,8 +45,6 @@
     .nav-wrap {
         display: flex;
         width: 100%;
-        position: fixed;
-        right: 0;
     }
 
     .logo {

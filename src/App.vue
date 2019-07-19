@@ -1,6 +1,6 @@
 <template>
     <!--    <div  id="app">-->
-    <div class="root">
+    <div id="root">
         <router-view></router-view>
     </div>
     <!--        <button @click="send">确定</button>-->
@@ -29,7 +29,7 @@
 </script>
 
 <style>
-    #app {
+    #root {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -39,29 +39,6 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
-        width: 100%;
-        height: 100%;
-    }
-
-    .header-wrap {
-        position: relative;
-        height: 60px;
-        background: aquamarine;
-    }
-
-    .j-aside {
-        position: relative;
-        left: 0;
-        margin-top: 60px;
-        bottom: 0;
-        /*background: rgba(203,27,69,.98);*/
-    }
-
-    .main-content {
-        position: relative;
-        overflow: auto;
-        margin-top: 60px;
-        width: 100%;
+        background: #2c3e50;
     }
 </style>
