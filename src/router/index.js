@@ -5,25 +5,21 @@ import layout from '../pages/layout'
 
 Vue.use(Router)
 
+const routes = [
+    {
+        path: '*',
+        redirect: '/yys'
+    },
+    {
+        path: '/yys',
+        component: layout
+    }
+]
+
 const routerConfig = {
     mode: 'history',
     linkActiveClass: 'active',
-    routes: [
-        {
-            path: '/yys',
-            component: layout,
-            children: import('../components/yys')
-        },
-        {
-            path: '/user',
-            component: layout,
-            children: import('../components/user/user')
-        },
-        {
-            path: '/list',
-            component: layout,
-            children: import('../components/list')
-        }
-    ]
+    routes: routes
 }
-export default new Router()
+
+export default new Router(routerConfig)
